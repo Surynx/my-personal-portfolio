@@ -342,31 +342,27 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xrblqedq" method="post" onsubmit="return validation()">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input id="name" type="text" name="name" class="form-control" placeholder="Your Name">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input id="mail" type="email" class="form-control" name="email" placeholder="Your Email">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea id="message" class="form-control" name="message" rows="6" placeholder="Message"></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                    <input type="submit" value="Send Message" class="btn btn-outline-danger">
                 </div>
 
               </div>
